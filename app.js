@@ -5,5 +5,5 @@ let parrafo = document.querySelector('p')
 parrafo.innerHTML = 'Indica un numero del 1 al 10'
 
 function intentoDeUsuario(){
-    
+    alert("Olis");
 }
