@@ -1,5 +1,4 @@
 let numerosecreto = generarNumeroSecreto();
-console.log(numerosecreto);
 
 function asignartextoElemento(elemento, texto){
     let elementoHtml = document.querySelector(elemento);
@@ -7,8 +6,12 @@ function asignartextoElemento(elemento, texto){
 
 }
 
-function intentoDeUsuario(){
-    alert("Olis");
+function verificarIntento(){
+    let numeroDeUsuario = document.getElementById('valorUsuario').value;
+    console.log(typeof(numeroDeUsuario))
+    console.log(numeroDeUsuario);
+    console.log(numerosecreto);
+    console.log(numeroDeUsuario == numerosecreto)
     return;
 }
 
@@ -20,5 +23,5 @@ function generarNumeroSecreto() {
 }
 
 asignartextoElemento('h1',"EL NUMERO SECRETO");
-asignartextoElemento('p','Indica un numero del 1 al 10!' );
+asignartextoElemento('p','Indica un numero del 1 al 10!');
 
