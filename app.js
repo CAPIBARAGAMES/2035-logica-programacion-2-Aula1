@@ -7,11 +7,12 @@ function asignartextoElemento(elemento, texto){
 }
 
 function verificarIntento(){
-    let numeroDeUsuario = document.getElementById('valorUsuario').value;
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     console.log(typeof(numeroDeUsuario))
     console.log(numeroDeUsuario);
     console.log(numerosecreto);
-    console.log(numeroDeUsuario == numerosecreto)
+    console.log(typeof(numerosecreto))
+    console.log(numeroDeUsuario === numerosecreto)
     return;
 }
 
