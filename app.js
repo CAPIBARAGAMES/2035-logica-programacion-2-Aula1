@@ -12,7 +12,15 @@ function verificarIntento(){
     console.log(numeroDeUsuario);
     console.log(numerosecreto);
     console.log(typeof(numerosecreto))
-    console.log(numeroDeUsuario === numerosecreto)
+    if (numeroDeUsuario === numerosecreto){
+        asignartextoElemento('p','Acertaste el numero')
+    } else{
+        if (numeroDeUsuario > numerosecreto){
+            asignartextoElemento('p','El numero secreto es menor');
+        } else{
+            asignartextoElemento('p','El numero secreto es menor')
+        }
+    }
     return;
 }
 
