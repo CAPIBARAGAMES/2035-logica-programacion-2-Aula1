@@ -6,6 +6,10 @@ function asignartextoElemento(elemento, texto){
 
 }
 
+
+asignartextoElemento('h1',"EL NUMERO SECRETO");
+asignartextoElemento('p','Indica un numero del 1 al 10!');
+
 function verificarIntento(){
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     console.log(typeof(numeroDeUsuario))
@@ -31,6 +35,4 @@ function generarNumeroSecreto() {
     
 }
 
-asignartextoElemento('h1',"EL NUMERO SECRETO");
-asignartextoElemento('p','Indica un numero del 1 al 10!');
 
