@@ -19,8 +19,9 @@ function verificarIntento(){
     console.log(typeof(numerosecreto))
     console.log(intentos);
     if (numeroDeUsuario === numerosecreto){
-        asignartextoElemento('p',`Acertaste el numero en ${intentos} ${(intentos == 1) ? "vez" : "veces"}`)
+        asignartextoElemento('p',`Acertaste el numero en ${intentos} ${(intentos == 1) ? "intento" : "intentos"}`)
     } else{
+        //El usuario no acerto
         if (numeroDeUsuario > numerosecreto){
             asignartextoElemento('p','El numero secreto es menor');
         } else{
@@ -28,6 +29,11 @@ function verificarIntento(){
         }
     }
     intentos++;
+    limpiarCaja();
+}
+
+function limpiarCaja() {
+    document.querySelector('#valorUsuario').value = '';
 }
 
 
