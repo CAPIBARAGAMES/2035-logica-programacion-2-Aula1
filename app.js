@@ -20,6 +20,7 @@ function verificarIntento(){
     console.log(intentos);
     if (numeroDeUsuario === numerosecreto){
         asignartextoElemento('p',`Acertaste el numero en ${intentos} ${(intentos == 1) ? "intento" : "intentos"}`)
+        document.getElementById('reiniciar').removeAttribute('disabled');
     } else{
         //El usuario no acerto
         if (numeroDeUsuario > numerosecreto){
