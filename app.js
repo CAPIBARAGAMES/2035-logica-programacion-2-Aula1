@@ -8,8 +8,17 @@ function asignartextoElemento(elemento, texto){
 }
 
 
-asignartextoElemento('h1',"EL NUMERO SECRETO");
-asignartextoElemento('p','Indica un numero del 1 al 10!');
+
+function condicionsStarts() {
+
+    asignartextoElemento('h1',"EL NUMERO SECRETO");
+    asignartextoElemento('p','Indica un numero del 1 al 10!');
+    numerosecreto = generarNumeroSecreto();
+    intentos = 1;
+    
+
+    
+}
 
 function verificarIntento(){
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
@@ -35,6 +44,19 @@ function verificarIntento(){
 
 function limpiarCaja() {
     document.querySelector('#valorUsuario').value = '';
+}
+
+function reiniciarJuego() {
+    //Clean box
+    limpiarCaja();
+    // get mesagge of numbers
+    //Genere ramdom number
+    //Reset trys
+    condicionsStarts();
+    //Disable button new game
+    document.querySelector('#reiniciar').setAttribute('disabled', 'true')
+    
+
 }
 
 
