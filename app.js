@@ -1,7 +1,7 @@
+let numerosecreto = 0;
 let numeroMax = 10;
 let listaNumerosSorteados = [];
-let numerosecreto = generarNumeroSecreto();
-let intentos = 1;
+let intentos = 0;
 
 
 
@@ -72,7 +72,7 @@ function reiniciarJuego() {
 
 
 function generarNumeroSecreto() {
-    let numeroGenerado = Math.floor(Math.random()*10 + 1);
+    let numeroGenerado = Math.floor(Math.random()*numeroMax+ 1);
 
     console.log(numeroGenerado)
     console.log(listaNumerosSorteados);
